@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: burlywood;
+    height: 60px;
+}
