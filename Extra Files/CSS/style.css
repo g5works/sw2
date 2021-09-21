@@ -11,6 +11,14 @@ html, body {
     padding: 0;
 }
 
+body{
+    background-color: gray;
+    background-image: url("../Images/bg.gif");
+}
+
+
+
+
 h1{
     color: white;
     font-family: "Minecraft";
@@ -29,15 +37,22 @@ p{
     margin-left: 1cm;
 }
 
-body{
-    background-color: gray;
-    background-image: url("../Images/bg.gif");
+
+
+a{
+    color: gray;
+    transition: 0.3s;
 }
 
-.header{
-    background-color: rgb(0, 0, 0);
-    height: 60px;
+a:active {
+    color: darkslategray;
 }
+
+a:hover{
+    color: white
+}
+
+
 
 .btn{
     background-color: black;
@@ -58,6 +73,14 @@ body{
 }
 
 
+
+
+
+.header{
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    width: 100%;
+}
 
 
 .header--image__img{

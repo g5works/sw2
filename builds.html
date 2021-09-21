@@ -7,13 +7,13 @@
   <body>
     <div class="header">
       <div class="header--image">
-        <a href="index.html"><img src="Extra Files/Images/sw2mc.gif" class="header--image__img"></a>
+        <a href="index.html"><img src="Extra Files/Images/sw2mc.png" class="header--image__img"></a>
       </div>
       <div class="header--links">
         <button onclick="tobuilds()" class="btn">Builds</button>
       </div>
       <div class="header--links">
-        <button class="btn">Photo Gallery</button>
+        <button onclick="tophotogallery()" class="btn">Photo Gallery</button>
       </div>
       <div class="header--links">
         <button class="btn">World Download</button>
@@ -22,6 +22,9 @@
     <script type="text/javascript">
         function tobuilds() {
             location.href = "builds.html"
+        }
+        function tophotogallery() {
+            location.href = "gallery.html"
         }
     </script>
   </body>
