@@ -1,6 +1,37 @@
+@font-face {
+    font-family: Minecraft;
+    src: url("../Fonts/Minecraftchmc-dBlX.ttf");
+}
+
+
+
+
 html, body {
     margin: 0;
     padding: 0;
+}
+
+h1{
+    color: white;
+    font-family: "Minecraft";
+    margin-left: 0.75cm
+}
+
+pre{
+    color: white;
+    font-family: "Minecraft";
+    margin-left: 1cm;
+}
+
+p{
+    color: white;
+    font-family: "Minecraft";
+    margin-left: 1cm;
+}
+
+body{
+    background-color: gray;
+    background-image: url("../Images/bg.gif");
 }
 
 .header{
