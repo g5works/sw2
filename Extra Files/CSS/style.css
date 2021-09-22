@@ -88,6 +88,11 @@ a:hover{
     width: 100%;
 }
 
+.footer{
+    background-color: rgb(0, 0, 0);
+    height: 80px;
+    width: 100%;
+}
 
 .header--image__img{
     border: 0px;
