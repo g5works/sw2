@@ -142,4 +142,27 @@ a:hover{
     }
   }
 
+label{
+    
+    color: white; 
+    font-family: "Minecraft";
+    font-size: 12pt;
+    
+}
+input{
+    margin-left: 1cm;
+}
 
+table{
+    border-collapse: collapse;
+    border: 2px;
+    color: white;
+    margin-left: 1cm;
+}
+
+td, th{
+    padding: 5px;
+    color: white;
+    border: 2px solid;
+    font-family: "Minecraft";
+}

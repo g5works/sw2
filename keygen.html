@@ -47,16 +47,48 @@
             }
             
         }
+        function keygen2(){
+            var keytail = Math.floor(Math.random() * (365 - 100) + 100);
+            var keytail2 = Math.floor(Math.random() * (99 - 95) + 95);
+            var key1 = Math.floor(Math.random() * (7 - 1) + 1);
+            var key2 = Math.floor(Math.random() * (7 - 1) + 1);
+            var key3 = Math.floor(Math.random() * (7 - 1) + 1);
+            var key4 = Math.floor(Math.random() * (7 - 1) + 1);
+            var key5 = Math.floor(Math.random() * (7 - 1) + 1);
+            var key6 = Math.floor(Math.random() * (7 - 1) + 1);
+            var foot = Math.floor(Math.random() * (99999 - 10000) + 10000);
+            var mathvar = key1+key2+key3+key4+key5+key6+0;
+            mathvar = mathvar%7
+            if (mathvar == 0){
+                document.getElementById("key2").innerHTML = `${keytail}${keytail2}-OEM-0${key1}${key2}${key3}${key4}${key5}${key6}-${foot}`
+            }
+            else{
+                keygen2();
+            }
+            
+        }
 
 
     </script>
     <h1>Welcome to the Windows 95 Key Generator!</h1>
     <p>Congrats on finding this secret!  Now, I will describe this tool.  Here, we generate keys for Windows 95.  Just press Generate, and Enjoy!</p>
     <br>
-    <p>Key:</p>
-    <p id="key">000-0000000</p>
+    <p>Keys:</p>
+    
+    <table border="1">
+        <tr>
+            <th>Retail Key</th>
+            <th>OEM Key</th>
+        </tr>
+        <tr>
+            <td id="key">000-0000000</td>
+            <td id="key2">00000-OEM-0000000-00000</td>
+        </tr>
+    </table>
+
+
     <br>
-    <button style="margin-left: 1cm;" onclick="keygen()">Generate</button>
+    <button style="margin-left: 1cm;" onclick="keygen(), keygen2()">Generate keys</button><br>
 
 
 
