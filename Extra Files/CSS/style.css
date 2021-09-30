@@ -177,6 +177,37 @@ td, th{
     min-height: 100vh;
 }
 
+.pwdwindow{
+    display: block;
+    background-color: rgb(71, 71, 71);
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 200px;
+}
+
+.passwd{
+    background-color: rgb(41, 41, 41);
+    height: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.passaccept{
+    border-style: solid;
+    height: 20px;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.passaccept:hover{
+    background-color: gray;
+}
+
 .content{
     padding-bottom: 80px;
 }
