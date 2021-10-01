@@ -3,7 +3,9 @@
   <head>
     <title>SpaceWorld 2</title>
     <link rel="stylesheet" href="Extra Files/CSS/style.css">
-    <link rel="icon" type="image/jpeg" href="Extra Files/Images/sw2favicon.jpg"
+    <link rel="icon" type="image/jpeg" href="Extra Files/Images/sw2favicon.jpg">
+    <script type="text/javascript" src="Extra Files/JS/keygen.js"></script>
+    <script type="text/javascript" src="Extra Files/JS/base.js"></script>
   </head>
   <body>
     <div class="header">
@@ -16,67 +18,7 @@
         <button onclick="todownloadpage()" class="btn">World Download</button>
       </div>
    </div>
-    <script type="text/javascript">
-        function tobuilds() {
-            location.href = "builds.html"
-        }
-        
-        function tophotogallery() {
-            location.href = "gallery.html"
-        }
-
-        function todownloadpage(){
-          location.href = "download.html"
-        }
-        function keygen(){
-            var keys = [];
-            for(let i = 0; i<7; i++){
-              keys.push(Math.floor(Math.random() * (7 - 1) + 1));
-              if(i===6){
-                var a
-              }
-            }
-            var keytail = Math.floor(Math.random() * (999 - 100) + 100);
-            var key1 = Math.floor(Math.random() * (7 - 1) + 1);
-            var key2 = Math.floor(Math.random() * (7 - 1) + 1);
-            var key3 = Math.floor(Math.random() * (7 - 1) + 1);
-            var key4 = Math.floor(Math.random() * (7 - 1) + 1);
-            var key5 = Math.floor(Math.random() * (7 - 1) + 1);
-            var key6 = Math.floor(Math.random() * (7 - 1) + 1);
-            var key7 = Math.floor(Math.random() * (7 - 1) + 1);
-            var mathvar = key1+key2+key3+key4+key5+key6+key7;
-            mathvar = mathvar%7
-            if (mathvar == 0){
-                document.getElementById("key").innerHTML = `${keytail}-${key1}${key2}${key3}${key4}${key5}${key6}${key7}`
-            }
-            else{
-                keygen();
-            }
-            
-        }
-        function keygen2(){
-            var keytail = Math.floor(Math.random() * (365 - 100) + 100);
-            var keytail2 = Math.floor(Math.random() * (99 - 95) + 95);
-            var key1 = Math.floor(Math.random() * (7 - 1) + 1);
-            var key2 = Math.floor(Math.random() * (7 - 1) + 1);
-            var key3 = Math.floor(Math.random() * (7 - 1) + 1);
-            var key4 = Math.floor(Math.random() * (7 - 1) + 1);
-            var key5 = Math.floor(Math.random() * (7 - 1) + 1);
-            var key6 = Math.floor(Math.random() * (7 - 1) + 1);
-            var foot = Math.floor(Math.random() * (99999 - 10000) + 10000);
-            var mathvar = key1+key2+key3+key4+key5+key6+0;
-            mathvar = mathvar%7
-            if (mathvar == 0){
-                document.getElementById("key2").innerHTML = `${keytail}${keytail2}-OEM-0${key1}${key2}${key3}${key4}${key5}${key6}-${foot}`
-            }
-            else{
-                keygen2();
-            }
-            
-        }
-
-
-    </script>
+   
     <h1>Welcome to the Windows 95 Key Generator!</h1>
     <p>Congrats on finding this secret!  Now, I will describe this tool.  Here, we generate keys for Windows 95.  Just press Generate, and Enjoy!</p>
     <br>

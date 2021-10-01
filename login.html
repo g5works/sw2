@@ -3,7 +3,9 @@
   <head>
     <title>SpaceWorld 2</title>
     <link rel="stylesheet" href="Extra Files/CSS/style.css">
-    <link rel="icon" type="image/jpeg" href="Extra Files/Images/sw2favicon.jpg"
+    <link rel="icon" type="image/jpeg" href="Extra Files/Images/sw2favicon.jpg">
+    <script type="text/javascript" src="Extra Files/JS/base.js"></script>
+    <script type="text/javascript" src="Extra Files/JS/sha256encrypt.js"></script>
   </head>
   <body>
     <div class="pagecont">
@@ -18,61 +20,21 @@
             <button onclick="todownloadpage()" class="btn">World Download</button>
           </div>
        </div>
-        <script type="text/javascript">
-            function tobuilds() {
-                location.href = "builds.html"
-            }
-            
-            function tophotogallery() {
-                location.href = "gallery.html"
-            }
-    
-            function todownloadpage(){
-              location.href = "download.html"
-            }
-            
-            function tow95keygen(){
-              numberofpresses = numberofpresses+1;
-              switch (numberofpresses){
-                case 1:
-                  document.getElementById("kg").innerHTML = "please stop"
-                break;
-                case 2:
-                  document.getElementById("kg").innerHTML = "there is nothing here"
-                break;
-                case 3:
-                  document.getElementById("kg").innerHTML = "this is only for the owner to see"
-                break;
-                case 4:
-                  document.getElementById("kg").innerHTML = "if you click here, then, then you will be banned off, uh, discord"
-                break;
-                case 5:
-                  document.getElementById("kg").innerHTML = "i can't stop you can i"
-                break;
-                case 6:
-                  document.getElementById("kg").innerHTML = "<i>Fine. </i> I give up. Enjoy. I guess."
-                break;
-                case 7:
-                  location.href="keygen.html"
-                break;
-              }
-            }
-        </script>
-
 <script>
-  //Encrypted Password script- By Rob Heslop
-  //Script featured on Dynamic Drive 
-  //Visit http://www.dynamicdrive.com 
   
   function submitentry(){
     var unamein = document.getElementById("uname");
     var uname = unamein.value;
     var pin = document.getElementById("pass");
     var p = pin.value;
-  ]
+    var sha = SHA256(p);
+    fetch("../passwd.txt")
+    .then (response => response.text())
+    .then(text => alert(text))
+    alert(sha);
   }
-  </script>
-  
+</script>
+
   <br>
   <br>
   <br>
@@ -87,7 +49,9 @@
       <input class="passwd" type="text" id="uname" placeholder="Username">
       <input class="passwd" type="password" id="pass" placeholder="Password">
       <input class="passaccept" type="button" value="Submit" onClick="submitentry()">
-      </form>
+    </form>
+    <br>
+    <p>Logging in will give you access to some pointless HTML trinkets I made.</p>
   </div>
   
         </div>  
