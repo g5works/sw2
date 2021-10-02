@@ -47,6 +47,8 @@ p{
 a{
     color: gray;
     transition: 0.3s;
+    font-family: "Minecraft";
+    font-size: 14pt;
 }
 
 a:active {

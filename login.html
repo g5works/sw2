@@ -5,14 +5,14 @@
     <link rel="stylesheet" href="Extra Files/CSS/style.css">
     <link rel="icon" type="image/jpeg" href="Extra Files/Images/sw2favicon.jpg">
     <script type="text/javascript" src="Extra Files/JS/base.js"></script>
-    <script type="text/javascript" src="Extra Files/JS/sha256encrypt.js"></script>
+    <script type="text/javascript" src="Extra Files/JS/sha256decrypt.js"></script>
   </head>
   <body>
     <div class="pagecont">
       <div class="content">
         <div class="header">
           <div class="header--image">
-            <a href="index.html"><img src="Extra Files/Images/sw2mc.png" class="header--image__img"></a>
+            <a href="index.html"><img src="Extra Files/Images/sw2logonew.png" width="230" height="60"  class="header--image__img"></a>
           </div>
           <div class="header--links">
             <button onclick="tobuilds()" class="btn">Builds</button>
@@ -27,11 +27,6 @@
     var uname = unamein.value;
     var pin = document.getElementById("pass");
     var p = pin.value;
-    var sha = SHA256(p);
-    fetch("../passwd.txt")
-    .then (response => response.text())
-    .then(text => alert(text))
-    alert(sha);
   }
 </script>
 
@@ -49,9 +44,7 @@
       <input class="passwd" type="text" id="uname" placeholder="Username">
       <input class="passwd" type="password" id="pass" placeholder="Password">
       <input class="passaccept" type="button" value="Submit" onClick="submitentry()">
-    </form>
-    <br>
-    <p>Logging in will give you access to some pointless HTML trinkets I made.</p>
+      </form>
   </div>
   
         </div>  
