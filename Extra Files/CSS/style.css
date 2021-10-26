@@ -101,6 +101,16 @@ a:hover{
     width: 100%;
 }
 
+.footerright{
+    display: block;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    height: 80px;
+    width: 100%;
+}
+
 .header--image__img{
     border: 0px;
 }
