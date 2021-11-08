@@ -13,6 +13,12 @@ function todownloadpage(){
   location.href = "download.html"
 }
 
+function torulespage(){
+  location.href = "rules.html"
+}
+
+
+
 function tow95keygen(){
   numberofpresses = numberofpresses+1;
   switch (numberofpresses){

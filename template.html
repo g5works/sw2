@@ -3,64 +3,40 @@
   <head>
     <title>SpaceWorld 2</title>
     <link rel="stylesheet" href="Extra Files/CSS/style.css">
-    <link rel="icon" type="image/jpeg" href="Extra Files/Images/sw2favicon.jpg"
+    <link rel="icon" type="image/jpeg" href="Extra Files/Images/sw2favicon.jpg">
+    <script type="text/javascript" src="Extra Files/JS/base.js"></script>
   </head>
   <body>
     <div class="pagecont">
       <div class="content">
         <div class="header">
           <div class="header--image">
-            <a href="index.html"><img src="Extra Files/Images/sw2mc.png" class="header--image__img"></a>
+            <a href="index.html"><img src="Extra Files/Images/sw2logonew.png" width="230" height="60"  class="header--image__img"></a>
           </div>
           <div class="header--links">
             <button onclick="tobuilds()" class="btn">Builds</button>
             <button onclick="tophotogallery()" class="btn">Photo Gallery</button>
-            <button onclick="todownloadpage()" class="btn">World Download</button>
+            <button onclick="todownloadpage()" class="btn">World Map</button>
+            <button onclick="torulespage()" class="btn">Rules</button>
           </div>
        </div>
-        <script type="text/javascript">
-            function tobuilds() {
-                location.href = "builds.html"
-            }
-            
-            function tophotogallery() {
-                location.href = "gallery.html"
-            }
     
-            function todownloadpage(){
-              location.href = "download.html"
-            }
-            
-            function tow95keygen(){
-              numberofpresses = numberofpresses+1;
-              switch (numberofpresses){
-                case 1:
-                  document.getElementById("kg").innerHTML = "please stop"
-                break;
-                case 2:
-                  document.getElementById("kg").innerHTML = "there is nothing here"
-                break;
-                case 3:
-                  document.getElementById("kg").innerHTML = "this is only for the owner to see"
-                break;
-                case 4:
-                  document.getElementById("kg").innerHTML = "if you click here, then, then you will be banned off, uh, discord"
-                break;
-                case 5:
-                  document.getElementById("kg").innerHTML = "i can't stop you can i"
-                break;
-                case 6:
-                  document.getElementById("kg").innerHTML = "<i>Fine. </i> I give up. Enjoy. I guess."
-                break;
-                case 7:
-                  location.href="keygen.html"
-                break;
-              }
-              
-            }
-        </script>
-        </div>  
+    
+    
+        <div class="footer">
+          <br>
+          <p style="font-size: 8pt;">"Minecraft" is a trademark of Mojang Synergies AB |  All rights reserved.</p>
+          <p style="font-size: 8pt;">I used the Mac OS Mountain Lion wp as the logo bg. Sorry Apple!</p>
+          <p id="kg" onclick="tow95keygen()" style="font-size: 8pt; margin-bottom: 0px;">don't click me pls</p> 
+          <br>
+        </div>
+        <div class="footerright">
+          <br>
+          <p style="font-size: 8pt; margin-bottom: 5px;">Play on ActionMC!</p> 
+          <a href="http://actionmc.ml"><img style="margin-right: 35px;" src="Extra Files/Images/actionmc.gif"></a>
+          <br>
+        </div>
       </div>
     </div>
-</body>
+  </body>
 </html>
