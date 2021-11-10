@@ -25,6 +25,10 @@ h1{
     margin-left: 0.75cm
 }
 
+.nomargin{
+    margin: 0px 0px;
+}
+
 h2{
     color: white;
     font-family: "Minecraft";

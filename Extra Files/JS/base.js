@@ -17,6 +17,10 @@ function torulespage(){
   location.href = "rules.html"
 }
 
+function tocreditspage(){
+  location.href = "aboutsw2site.html"
+}
+
 
 
 function tow95keygen(){
