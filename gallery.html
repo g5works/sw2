@@ -24,20 +24,23 @@
         
         <h1><u>Photo Gallery:</u></h1>
     
-        <div class="gallery--row">
-          <div class="gallery--column">
-            <img src="Extra Files/Images/a.webp">
-            <img src="Extra Files/Images/b.webp">
+        <center style="font-family: Myriad Pro; color: white;">
+          <p>Photo:</p>
+          <br>
+          <a id="downloadlink" href="Extra Files/Images/sw2img1.gif" download="sw2img1.gif">Download Current Image!</a>
+          <br>
+          <br>
+          <img id="galleryprev" src="Extra Files/Images/sw2img1.gif" height="500px" alt="">
+          <br>
+          <br>
+          <div style="display:inline-block; background-color: black; width: auto; height: auto;">
+            <button onclick="changeimagebackwardgallery()" class="navigationbutton">Previous</button>
+            <span style="width: 3cm;" id="imagern">1/10</span>
+            <button onclick="changeimageforwardgallery()" class="navigationbutton">Next</button>
           </div>
-            <div class="gallery--column">
-              <img src="Extra Files/Images/c.webp">
-              <img src="Extra Files/Images/d.webp">
-            </div>
-          <div class="gallery--column">
-            <img src="Extra Files/Images/g4 cube.webp">
-            <img src="Extra Files/Images/galaxycastle.webp">
-          </div>
-        </div>
+          
+        </center>
+        
         <br>
         <br>
         <h2>More photos coming once the server goes up!</h2>
@@ -58,6 +61,7 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="Extra Files/JS/gallery.js"></script>
   </body>
 </html>
 

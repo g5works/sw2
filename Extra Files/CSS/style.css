@@ -59,7 +59,35 @@ a:hover{
     color: white
 }
 
+.navigationbutton{
+    border: none; 
+    font-family: "Myriad Pro";
+    background-color: black; 
+    color: white;
+    height: 40px;
+    width: 70px;
+    transition: 0.3s;
+}
 
+#downloadlink{
+    border:solid 5px;
+    border-radius: 5px;
+    border-color: black; 
+    background-color: black; 
+    text-decoration: none; 
+    color: white;
+}
+
+#downloadlink:hover{
+    color: black;
+    background-color: white;
+    border-color: white;
+}
+
+.navigationbutton:hover{
+    background-color: white;
+    color: black;
+}
 
 .btn{
     background-color: black;
